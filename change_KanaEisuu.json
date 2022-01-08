@@ -1,0 +1,48 @@
+{
+    "title": "Change left_command+spacbar->kana,left_shift+spacebar->eisuu",
+    "rules": [
+        {
+            "description": "Change left_command+spacbar->kana,left_shift+spacebar->eisuu",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "spacebar",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_command"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "japanese_kana"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "spacebar",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "japanese_eisuu"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}
